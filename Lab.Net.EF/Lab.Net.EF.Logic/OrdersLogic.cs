@@ -9,7 +9,6 @@ namespace Lab.Net.EF.Logic
 {
     public class OrdersLogic : BaseLogic, IABMLogic<Orders>
     {
-        private List<Orders> _orders;
         public void Add(Orders entity)
         {
             context.Orders.Add(entity);

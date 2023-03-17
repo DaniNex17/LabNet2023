@@ -10,12 +10,7 @@ namespace Lab.Net.EF.Logic
 {
     public class RegionLogic : BaseLogic, IABMLogic<Region>
     {
-        private List<Region> regions;
-
-        public RegionLogic()
-        {
-            regions = new List<Region>();
-        }
+        
         public List<Region> GetAll()
         {
             return context.Region.AsNoTracking().ToList();

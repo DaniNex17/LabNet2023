@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Net.EF.Data", "Lab.Net.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Net.EF.Entities", "Lab.Net.EF.Entities\Lab.Net.EF.Entities.csproj", "{4A82577C-A576-4DC9-9789-3366EB8704DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Net.EF.Test", "Lab.Net.EF.Test\Lab.Net.EF.Test.csproj", "{9488DB16-9F62-4227-88DB-366613E52106}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{4A82577C-A576-4DC9-9789-3366EB8704DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A82577C-A576-4DC9-9789-3366EB8704DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A82577C-A576-4DC9-9789-3366EB8704DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9488DB16-9F62-4227-88DB-366613E52106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9488DB16-9F62-4227-88DB-366613E52106}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9488DB16-9F62-4227-88DB-366613E52106}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9488DB16-9F62-4227-88DB-366613E52106}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
