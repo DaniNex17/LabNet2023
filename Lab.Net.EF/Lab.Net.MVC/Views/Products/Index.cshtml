@@ -1,0 +1,35 @@
+﻿@model List<Lab.Net.MVC.Models.ProductsView>
+
+@{
+    ViewBag.Title = "Productos";
+}
+<h1>Lista de Productos</h1>
+<hr />
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col" class='text-sm-center'>Eliminar</th>
+            <th scope="col" class='text-sm-left'>Editar</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+
+    @foreach (var products in Model)
+    {
+        <tr>
+            <th scope="row">@products.Id</th>
+            <td>@products.ProductName</td>
+            <td>@products.UnitPrice</td>
+            <td class='text-sm-center'><a href='@Url.Action("Delete", "Products", new { id = products.Id })' onclick='return confirm("¿Está seguro de eliminar?")'><i class='fa fa-trash text-danger'></i></a></td>
+            <td class='text-sm-start'><a href='@Url.Action("Update", "Products", new { id = products.Id })' onclick='return confirm("¿Está seguro de editar?")'><i class='fa fa-cog'></i></a></td>
+        </tr>
+    }
+</table>
+
+<div>
+    @Html.ActionLink("Insertar Nuevo Producto", "Insert", "Products", new { @class = "btn btn-primary" })
+</div>
