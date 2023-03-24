@@ -46,5 +46,10 @@ namespace Lab.Net.EF.Logic
             employeeUpdate.LastName = entity.LastName;
             context.SaveChanges();
         }
+
+        public Employees GetById(int id)
+        {
+            return context.Employees.FirstOrDefault(e => e.EmployeeID == id);
+        }
     }
 }

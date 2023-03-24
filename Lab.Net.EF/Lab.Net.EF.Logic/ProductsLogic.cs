@@ -31,5 +31,9 @@ namespace Lab.Net.EF.Logic
             productUpdate.ProductName = entity.ProductName;
             context.SaveChanges();
         }
+        public Products GetById(int id)
+        {
+            return context.Products.FirstOrDefault(p => p.ProductID == id);
+        }
     }
 }
