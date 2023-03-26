@@ -1,0 +1,57 @@
+﻿@model Lab.Net.MVC.Models.CharacterResponse
+
+@{
+    ViewBag.Title = "Personajes";
+}
+<h1>Personajes</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Species</th>
+            <th>Type</th>
+            <th>Gender</th>
+            <th>Origin</th>
+            <th>Location</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var character in Model.Results)
+        {
+            <tr>
+                <td>@character.Name</td>
+                <td>@character.Status</td>
+                <td>@character.Species</td>
+                <td>@character.Type</td>
+                <td>@character.Gender</td>
+                <td>@character.Origin.Name</td>
+                <td>@character.Location.Name</td>
+                <td><img src="@character.ImageUrl" alt="@character.Name" width="100"></td>        
+            
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="pagination">
+    @if (ViewBag.PrevPageUrl != null)
+    {
+        <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })" class="btn btn-primary pagination-button">&laquo; Anterior</a>
+    }
+    else
+    {
+        <span class="btn btn-primary disabled pagination-button">&laquo; Anterior</span>
+    }
+
+    @if (ViewBag.NextPageUrl != null)
+    {
+        <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1})" class="btn btn-primary pagination-button">Siguiente &raquo;</a>
+    }
+    else
+    {
+        <span class="btn btn-primary disabled pagination-button">Siguiente &raquo;</span>
+    }
+</div>

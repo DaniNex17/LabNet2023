@@ -5,19 +5,13 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Lab.Net.MVC
+namespace WebAPI
 {
     public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-            name: "RickAndMorty",
-            url: "RickAndMorty",
-            defaults: new { controller = "RickAndMorty", action = "Index", id = UrlParameter.Optional }
-            );
 
             routes.MapRoute(
                 name: "Default",

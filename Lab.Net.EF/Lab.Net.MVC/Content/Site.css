@@ -18,3 +18,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.pagination .btn {
+    margin-right: 10px;
+    
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

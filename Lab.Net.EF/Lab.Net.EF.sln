@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Net.MVC", "Lab.Net.MVC\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Net.EF.Test", "Lab.Net.EF.Test\Lab.Net.EF.Test.csproj", "{9488DB16-9F62-4227-88DB-366613E52106}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{568F66C3-5DCC-4D74-B12C-604BBC0DB9CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,18 @@ Global
 		{4A82577C-A576-4DC9-9789-3366EB8704DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A82577C-A576-4DC9-9789-3366EB8704DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A82577C-A576-4DC9-9789-3366EB8704DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8760F213-B307-4596-BDFB-50FE7F4164BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8760F213-B307-4596-BDFB-50FE7F4164BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8760F213-B307-4596-BDFB-50FE7F4164BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8760F213-B307-4596-BDFB-50FE7F4164BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9488DB16-9F62-4227-88DB-366613E52106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9488DB16-9F62-4227-88DB-366613E52106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9488DB16-9F62-4227-88DB-366613E52106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9488DB16-9F62-4227-88DB-366613E52106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{568F66C3-5DCC-4D74-B12C-604BBC0DB9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{568F66C3-5DCC-4D74-B12C-604BBC0DB9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{568F66C3-5DCC-4D74-B12C-604BBC0DB9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{568F66C3-5DCC-4D74-B12C-604BBC0DB9CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
