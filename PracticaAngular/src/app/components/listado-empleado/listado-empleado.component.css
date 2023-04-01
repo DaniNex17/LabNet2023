@@ -1,0 +1,46 @@
+table {
+    width: 100%;
+    border-radius: 20%;
+    
+  }
+
+  td, th{
+    width: 15%;
+    font-size: 15px;
+
+  }
+
+  .mat-form-field {
+    font-size: 20px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    
+  }
+
+  .delete{
+    cursor: pointer;
+    color: #E15639;
+  }
+
+  .edit{
+    cursor: pointer;
+    color: rgb(28, 154, 232);
+  }
+
+  .search{
+    cursor: pointer;
+  }
+
+  .agregar{
+    background-color: green;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .agregar:hover{
+    background-color: #4e54c8;
+  }
+
+  
+

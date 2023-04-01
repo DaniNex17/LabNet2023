@@ -1,0 +1,28 @@
+.card{
+    margin-top: 10px;
+}
+
+.mat-form-field{
+    width: 50%;
+    margin: 5px;
+}
+
+.btnAgregar{
+    margin-right: 5px;
+    background-color: #4e54c8;
+}
+
+.btnAgregar:enabled:hover{
+    background-color: green;
+}
+
+.btnRegresar{
+    background-color: rgb(238, 80, 80);
+    color: white;
+}
+
+.btnRegresar:hover{
+    background-color: green;
+}
+
+  

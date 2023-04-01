@@ -1,0 +1,21 @@
+.card{
+    margin-top: 5px;
+    text-align: center;   
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.datos{
+    font-size: 20px;
+}
+
+.boton{
+    background-color: rgb(180, 183, 180);
+}
+.boton:hover{
+    background-color: #4e54c8; 
+    color: white;
+}
+

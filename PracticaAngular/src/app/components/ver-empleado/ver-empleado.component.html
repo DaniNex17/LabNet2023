@@ -1,0 +1,20 @@
+<div class="title">
+    <h1>Ver Empleado</h1>
+</div>
+<app-spinner *ngIf="loading "></app-spinner>
+<div *ngIf="empleado != null" class="container">
+    <mat-card class="card">
+        <mat-card-title class="titulo">{{empleado.FirstName}}</mat-card-title>
+        <mat-card-content class="datos">
+            <p><strong>Apellido:</strong> {{ empleado.LastName }} </p>
+            <p><strong>Ciudad:</strong> {{ empleado.City }} </p>
+            <p><strong>Pais:</strong> {{ empleado.Country }} </p>
+            
+        </mat-card-content>
+        <mat-card-actions>
+            <button class="boton" routerLink="/listEmpleados" mat-raised-button>Regresar</button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>
+

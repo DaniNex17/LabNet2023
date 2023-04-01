@@ -1,0 +1,60 @@
+<div class="title">
+  <h1>Listado de Empleados </h1>
+</div>
+
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="container">
+  <mat-form-field appearance="fill">
+    <mat-label>Filtrar</mat-label>
+    <input
+      matInput
+      (keyup)="applyFilter($event)"
+      placeholder="Buscar"
+      #input
+      autocomplete="off"
+    />
+  </mat-form-field>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+    <!-- Position Column -->
+    <ng-container matColumnDef="FirstName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Nombre</th>
+      <td mat-cell *matCellDef="let element">{{ element.FirstName }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="LastName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Apellido</th>
+      <td mat-cell *matCellDef="let element">{{ element.LastName }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="City">
+      <th mat-header-cell *matHeaderCellDef>Ciudad</th>
+      <td mat-cell *matCellDef="let element">{{ element.City }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Country">
+      <th mat-header-cell *matHeaderCellDef>Pais</th>
+      <td mat-cell *matCellDef="let element">{{ element.Country }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="acciones">
+      <th mat-header-cell *matHeaderCellDef>
+        <button routerLink="/agregarEmpleados" class="agregar" mat-raised-button color="primary">Agregar</button>
+      </th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon routerLink="/verEmpleados/{{element.EmployeeID}}" matTooltip="Ver" class="search" fontIcon="search"></mat-icon>
+        <mat-icon routerLink="/editarEmpleados/{{element.EmployeeID}}" matTooltip="Editar" class="edit" fontIcon="edit"></mat-icon>
+        <mat-icon  (click)="eliminarEmpleado(element.EmployeeID)" matTooltip="Borrar" class="delete" fontIcon="delete"></mat-icon>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <mat-paginator
+    [pageSizeOptions]="[10]"
+    aria-label="Select page of periodic elements"
+  >
+  </mat-paginator>
+</div>
