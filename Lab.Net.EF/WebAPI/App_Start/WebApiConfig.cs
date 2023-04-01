@@ -13,8 +13,9 @@ namespace WebAPI
         public static void Register(HttpConfiguration config)
         {
             // Configuración y servicios de Web API
-            var cors = new EnableCorsAttribute("*","*","*");
+            var cors = new EnableCorsAttribute("http://localhost:4200", "*","*");
             config.EnableCors(cors);
+            
 
             // Rutas de Web API
             config.MapHttpAttributeRoutes();
@@ -23,7 +24,7 @@ namespace WebAPI
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
-                //constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get, HttpMethod.Post, HttpMethod.Put, HttpMethod.Delete) }
+                
             );
         }
     }
